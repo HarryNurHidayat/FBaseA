@@ -3,6 +3,7 @@ package com.example.fbasea.Database;
 import java.io.Serializable;
 
 public class Teman implements Serializable {
+    String kode;
     String nama;
     String telepon;
 
@@ -28,6 +29,14 @@ public class Teman implements Serializable {
 
     public void setTelepon(String telepon) {
         this.telepon = telepon;
+    }
+
+    public String getKode() {
+        return kode;
+    }
+
+    public void setKode(String kode) {
+        this.kode = kode;
     }
 
     @Override
