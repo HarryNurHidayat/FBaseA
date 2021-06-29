@@ -33,17 +33,15 @@ public class TambahTeman extends AppCompatActivity {
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!(edNama.getText().toString().isEmpty()) && !(edTelpon.getText().toString().isEmpty()))
-                {
+                if (!(edNama.getText().toString().isEmpty()) && !(edTelpon.getText().toString().isEmpty())) {
                     nm = edNama.getText().toString();
                     tlp = edTelpon.getText().toString();
 
-                    submitTeman(new Teman(nm,tlp));
-                }
-
-                else
+                    //submitTeman(new Teman(nm,tlp));
+                    submitTeman(new Teman(edNama.getText().toString(), edTelpon.getText().toString()));
+                } else {
                     Toast.makeText(TambahTeman.this, "Data tidak boleh kosong", Toast.LENGTH_SHORT).show();
-
+                }
             }
         });
     }

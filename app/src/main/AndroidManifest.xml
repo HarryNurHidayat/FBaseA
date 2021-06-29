@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FBaseA">
         <activity android:name=".LihatTeman"></activity>
+        <activity android:name=".TemanEdit" />
         <activity android:name=".TambahTeman" />
         <activity android:name=".MainActivity">
             <intent-filter>

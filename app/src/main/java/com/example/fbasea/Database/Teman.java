@@ -39,10 +39,12 @@ public class Teman implements Serializable {
         this.kode = kode;
     }
 
+
     @Override
     public String toString() {
         return "Teman{" +
-                "nama='" + nama + '\'' +
+                "kode='" + kode + '\'' +
+                ", nama='" + nama + '\'' +
                 ", telepon='" + telepon + '\'' +
                 '}';
     }
